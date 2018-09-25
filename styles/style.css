@@ -62,10 +62,10 @@ nav .logo {
 
 .newProd .produit {
     background: url('../img/serrure.png') no-repeat;
-    background-position: bottom 50px right 100px;
+    background-position: bottom 0 right 100px;
     background-size: 70vh;
     background-attachment: fixed;
-    height: calc(100vh - 50px);
+    height: 100vh;
 }
 
 .newProd #next {
@@ -76,6 +76,8 @@ nav .logo {
     background-size: 40px;
     background-repeat: no-repeat;
     background-position: center;
+    position: absolute;
+    bottom: 0;
 }
 
 /** Produit Phare End **/
@@ -83,8 +85,24 @@ nav .logo {
 /** Presentation Produit Phare Start **/
 
 .newPres {
-    height: 100vh;
+    height: 90vh;
     background-color: black; 
 }
 
+.newPres .presProduct {
+    background-image: url("../img/hotProduct.png"); 
+    background-repeat: no-repeat;
+    background-size: 23%;
+    background-position: top 50% left 15%;
+    height: 100%;
+}
+
 /** Presentation Produit Phare End **/
+
+/** Presentation Appli Mob Start **/
+
+.appMob {
+    height: 100vh;
+}
+
+/** Presentation Appli Mob End **/
