@@ -7,10 +7,6 @@ body {
 
 /** Navigation/Menu Start **/
 
-nav {
-
-}
-
 nav .logo {
     background: url('../img/logo.svg') no-repeat;
     background-size: cover;
@@ -72,10 +68,10 @@ nav .logo {
     height: calc(100vh - 50px);
 }
 
-.newProd .next {
+.newProd #next {
     width: 100vw;
     height: 50px;
-    background-color: black;
+    background-color: #161212;
     background-image: url("../img/down-arrow.svg");
     background-size: 40px;
     background-repeat: no-repeat;
@@ -87,7 +83,8 @@ nav .logo {
 /** Presentation Produit Phare Start **/
 
 .newPres {
-    height: 200vh;
+    height: 100vh;
+    background-color: black; 
 }
 
 /** Presentation Produit Phare End **/
