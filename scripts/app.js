@@ -14,6 +14,14 @@ $(document).ready(function() {
         if (position == heightWindow) { 
             $('#next').fadeIn(1000);
         }
+        console.log(position);
         
+        
+	});
+});
+
+$(document).ready(function() {
+	$("#next").on("click", function() {
+        $('html, body').animate({ scrollTop: $(window).height() }, 1200);
 	});
 });
