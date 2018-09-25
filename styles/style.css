@@ -1,3 +1,93 @@
-
-
 /*# sourceMappingURL=style.css.map */
+
+body {
+    background-color: #f8d609;
+    margin: 0;
+}
+
+/** Navigation/Menu Start **/
+
+nav {
+
+}
+
+nav .logo {
+    background: url('../img/logo.svg') no-repeat;
+    background-size: cover;
+    width: 200px;
+    height: 61px;
+    position: absolute;
+    z-index: 999;
+    top: 20px;
+    left: 50px;
+}
+
+/** Navigation/Menu End **/
+
+/** Produit Phare Start **/
+
+.newProd {
+    background-image: radial-gradient(circle at bottom left, rgba(248, 214, 9, 1), rgba(253, 80, 0, .5) 150%);
+    height: 100vh;
+}
+
+.newProd .description {
+    position: absolute;
+    top: 50%;
+    transform: translate(50%, -50%);
+    width: 25%;
+    font-size: 24px;
+    color: white;
+}
+
+.newProd .description .txt {
+    margin-bottom: 50px;
+}
+
+.newProd .description .txt p {
+    margin: 15px 0;
+}
+
+.newProd .description a {
+    text-decoration: none;
+    color: #f8d609;
+    padding: 10px;
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.newProd .description a:hover {
+    color: white;
+    background-color: #009E74;
+    transition-duration: 300ms;
+}
+
+.newProd .produit {
+    background: url('../img/serrure.png') no-repeat;
+    background-position: bottom 50px right 100px;
+    background-size: 70vh;
+    background-attachment: fixed;
+    height: calc(100vh - 50px);
+}
+
+.newProd .next {
+    width: 100vw;
+    height: 50px;
+    background-color: black;
+    background-image: url("../img/down-arrow.svg");
+    background-size: 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/** Produit Phare End **/
+
+/** Presentation Produit Phare Start **/
+
+.newPres {
+    height: 200vh;
+}
+
+/** Presentation Produit Phare End **/
