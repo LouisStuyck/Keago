@@ -1,0 +1,73 @@
+body{
+  background-color: white;
+  background-image: radial-gradient(50% 400%, rgba(0,0,0,0.82) 50%, #000000 150%);
+  color: white;
+}
+
+.howAreWe_container{
+  width: 100vw;
+}
+
+.aboutUs_title{
+    margin-left: 10vw;
+    margin-top: 6vh;
+}
+
+.howAreWe_allVisual{
+  display: flex;
+  justify-content: space-between;
+  width: 60vw;
+  margin: 0 auto;
+}
+
+.howAreWe_Visual{
+  width: 25%;
+  text-align: center;
+  font-size: 20px;
+}
+
+.team_visual{
+  width: 100%;
+}
+
+.australia_visual{
+  width: 127%;
+}
+
+.locked_visual{
+  width: 68%;
+}
+
+.ourStory_container{
+  height: 50vh;
+  position: relative;
+}
+
+.timeline_visual{
+  position: absolute;
+  top: -30vh;
+}
+
+.contactUs_container{
+  height: 30vh;
+}
+
+.email_container{
+  display: flex;
+  justify-content: center;
+}
+
+.email_button{
+  margin-top: 5vh;
+  border: solid 4px #F8D609;
+  border-radius: 10px;
+  width: 500px;
+  text-align: center;
+  color: #F8D609;
+}
+
+.email_button:hover{
+  transition: all ease-in 0.2s;
+  color: black;
+  background-color: #F8D609;
+}
