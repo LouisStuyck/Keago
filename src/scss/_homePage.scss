@@ -1,0 +1,433 @@
+/*# sourceMappingURL=style.css.map */
+html {
+    margin: 0;
+}
+
+body {
+    background-color: #f8d609;
+    margin: 0;
+}
+
+/** Navigation/Menu Start **/
+
+nav .logo {
+    background: url('../img/logo.svg') no-repeat;
+    background-size: cover;
+    width: 200px;
+    height: 61px;
+    position: absolute;
+    z-index: 999;
+    top: 20px;
+    left: 50px;
+}
+
+/** Navigation/Menu End **/
+
+/** Produit Phare Start **/
+
+.newProd {
+    background-image: radial-gradient(circle at bottom left, rgba(248, 214, 9, 1), rgba(253, 80, 0, .5) 150%);
+    height: 100vh;
+    min-height: 570px;
+}
+
+.newProd .description {
+    position: absolute;
+    top: 50%;
+    transform: translate(40%, -50%);
+    width: 400px;
+    font-size: 24px;
+    color: white;
+}
+
+.newProd .description .txt {
+    margin-bottom: 50px;
+    width: 350px;
+
+}
+
+.newProd .description .txt p {
+    margin: 15px 0;
+    width: 100%;
+    font-size: 1.875rem
+}
+
+.newProd .description a {
+    text-decoration: none;
+    color: #f8d609;
+    padding: 10px;
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.newProd .description a:hover {
+    color: white;
+    background-color: #009E74;
+    transition-duration: 300ms;
+}
+
+.newProd .produit {
+    background: url('../img/serrure.png') no-repeat;
+    background-position: bottom 0 right 100px;
+    background-size: 45%;
+    background-attachment: fixed;
+    height: 100vh;
+    min-height: 570px;
+}
+
+.newProd #next {
+    width: 100vw;
+    height: 50px;
+    background-color: #161212;
+    background-image: url("../img/down-arrow.svg");
+    background-size: 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    bottom: 0;
+}
+
+@media screen and (max-width: 1000px) {
+    .newProd .description {
+        transform: translate(20%, -50%);
+    }
+    .newProd .produit {
+        background-position: bottom 0 right 10px;
+
+    }
+}
+@media screen and (max-width: 835px) {
+    .newProd .description {
+        transform: translate(10%, -50%);
+    }
+}
+@media screen and (max-width: 800px) {
+    .newProd .description .txt h1 {
+        font-size: 8vw;
+        width: 100%;
+    }
+    .newProd {
+        min-height: 460px;
+    }
+    .newProd .produit {
+        background: url('../img/serrure.png') no-repeat;
+        background-position: bottom 0 right 50%;
+        right: 50%;
+        top: 50%;
+        background-size: 300px;
+        background-attachment: fixed;
+        width: 100vw;
+        min-height: 460px;
+    }
+    .newProd .description  {
+        transform: translate(50%, -50%);
+        right: 50%;
+        top: 40%;
+        width: 100vw;
+    }
+    .newProd .description .txt {
+        margin: 0 auto;
+        text-align: center;
+    }
+    .newProd .description p {
+        display: none;
+    }
+    .newProd .description a {
+        text-align: center;
+        margin-left: calc(50% - 122.5px);
+    }
+}
+
+@media screen and (max-height: 460px) {
+    .newProd #next {
+        width: 100px;
+        height: 50px;
+        border-radius: 10px;
+        left: 80%;
+        bottom: 20px;
+    }
+    .newProd .description  {
+        transform: translate(50%, -50%);
+        top: 200px;
+    }
+}
+
+@media screen and (max-height: 570px) and (min-width: 800px) {
+    .newProd #next {
+        width: 100px;
+        height: 50px;
+        border-radius: 10px;
+        left: 80%;
+        bottom: 20px;
+    }
+    .newProd .description  {
+        transform: translate(10%, -50%);
+        top: 300px;
+    }
+}
+
+/** Produit Phare End **/
+
+/** Presentation Produit Phare Start **/
+
+.newPres {
+    height: 90vh;
+    min-height: 420px;
+    background-image: radial-gradient(at bottom, rgb(30, 30, 30), black 200%);
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+}
+
+.newPres .presProduct {
+    width: 50vw;
+    background-image: url("../img/hotProduct.png");
+    background-repeat: no-repeat;
+    background-size: 20vw;
+    background-position: top 50% left 50%;
+    height: 100%;
+}
+
+.newPres .presTxt {
+    color: white;
+    width: 50vw;
+    padding-top: 10vh;
+}
+
+.newPres .presTxt h1 {
+}
+.newPres .presTxt .trait {
+    background-image: linear-gradient(to right, #f8d609 , #FF9100 70%);
+    border-radius: 5px;
+    height: 2px;
+    width: 150px; 
+    margin-top: -20px; 
+}
+
+.newPres .presTxt li {
+	line-height: 35px;
+}
+
+.newPres .presTxt p {
+    width: 60%;
+    line-height: 25px;
+}
+
+@media screen and (max-height: 400px) {
+    .newPres .presProduct {
+        background-size: 175px;
+        height: 400px;
+    }
+    
+}
+
+@media screen and (max-width: 660px) {
+    .newPres .presTxt p {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .newPres {
+        height: 220vh;
+        flex-direction: column;
+    }
+    .newPres .presTxt {
+        margin: 0 auto;
+        text-align: justify;
+        padding-top: 0;
+    }
+    .newPres .presTxt p {
+        width: 85%;
+        text-align: justify;
+    }
+    .newPres .presTxt h1 {
+        text-align: left;
+    }
+    .newPres .presTxt li {
+        margin: 0 auto;
+    }
+    .newPres .presProduct {
+        width: 100vw;
+        background-size: 290px;
+        background-position: top 50% left 70%;
+        background-attachment: fixed;
+        height: 100%;
+    }
+}
+
+/** Presentation Produit Phare End **/
+
+/** Presentation Appli Mob Start **/
+
+.appMob {
+    background: radial-gradient(at top, rgb(30, 30, 30), black 200%);
+}
+
+.container {
+    width: 100vw;
+    padding: 0;
+}
+
+.parallax_1 {
+    background: url('../img/appliA.png') no-repeat center;
+    background-size: 300px;
+    background-position-x: 90%;
+    height: 700px;
+    margin-left: 45vw;
+    width: 50vw;
+}
+.parallax_2 {
+    background: url('../img/appliB.png') no-repeat center;
+    background-size: 300px;
+    background-position-x: 90%;
+    background-attachment: fixed;
+    height: 700px;
+    width: 50vw;
+    margin-left: 45vw;
+}
+.parallax_3 {
+    background: url('../img/appliC.png') no-repeat center;
+    background-size: 300px;
+    background-position-x: 90%;
+    height: 700px;
+    padding-bottom: 100px;
+    width: 50vw;
+    margin-left: 45vw;
+}
+
+.txtMob {
+    height: 1%;
+    width: 50vw;
+    float: left;
+    position: relative;
+    font-size: 24px;
+    color: white;
+    left: 5%;
+    bottom: -300%;
+    display: flex;
+    flex-direction: row;
+    height: 500px;
+}
+.txtMob {
+    float: left;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 20%;
+    font-size: 24px;
+    color: white;
+    margin-bottom: 10%;
+
+}
+.txtMob_1 {
+    width: 80%;
+    height: 50%;
+}
+
+.txtMob p {
+    margin: 10px 0;
+    color: white;
+}
+
+.progress {
+    margin-left: 40px;
+    width: 20px;
+    height: 760px;
+    transform: translateY(10%);
+}
+  
+.progress-container {
+    background: url(../img/A.svg) no-repeat;
+    background-size: 20px;  
+    height: 760px;
+    width: 20px;
+}
+  
+.progress-bar {
+    background: url(../img/B.svg) no-repeat;
+    background-size: 20px;
+    height: 0vh;
+    width: 20px;
+}
+
+@media screen and (max-width: 800px) {
+    .parallax_2, .parallax_3 {
+        display: none;
+    }
+    .parallax_1 {
+        background-size: 200px;
+    }
+
+    .txtMob_1 {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    left: 0;
+    }
+
+    .progress {
+        display: none;
+    }
+}
+
+@media screen and (max-height: 600px) {
+    .parallax_2, .parallax_3 {
+        display: none;
+    }
+    .parallax_1 {
+        background-size: 200px;
+    }
+
+    .txtMob_1 {
+    position: relative;
+    width: 100%;
+    margin: 0 0 0 20px;
+    left: 0;
+    }
+
+    .progress {
+        display: none;
+    }
+}
+@media screen and (max-width: 600px) {
+    .parallax_1, .parallax_2, .parallax_3 {
+        background-size: 100px;
+    }
+    .txtMob_1 {
+    position: relative;
+    width: 100%;
+    margin: 0 0 0 20px;
+    left: 0;
+    }
+
+    .progress {
+        display: none;
+    }
+}
+
+/** Presentation Appli Mob End **/
+
+/** Securité Start **/
+
+/** Securité End **/
+
+/** Lien start **/
+.downButton a {
+    text-decoration: none;
+    color: #f8d609;
+    padding: 10px;
+    border: 2px solid black;
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 10px;
+    font-size: 30px;
+    width: 500px;
+}
+
+.downButton a:hover {
+    color: white;
+    transition-duration: 300ms;
+}
+/** Lien End **/
