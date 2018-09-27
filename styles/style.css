@@ -32,13 +32,13 @@ div.burgerMenu { display: none; }
   #menuToggle input:checked ~ ul { transform: none; } }
 main { font-family: TruenoSBd; }
 
-.productsDisplay { height: 91vh; min-height: 700px; background-image: radial-gradient(circle at bottom left, #f8d609, rgba(253, 80, 0, 0.5) 150%); display: flex; align-items: center; flex-direction: column; }
+.productsDisplay { height: 91vh; min-height: 700px; background-image: radial-gradient(circle at bottom left, #f8d609, rgba(253, 80, 0, 0.5) 150%); display: flex; align-items: center; justify-content: center; flex-direction: column; }
 
 .displayAnimation { position: relative; width: 60vw; height: 500px; display: flex; justify-content: center; align-items: flex-end; }
 
 .padlock_display_animation { width: 8vw; height: 20vh; position: relative; }
 
-.padlock_display_animation:hover .padlock_ring_display { transform: translateY(-22px); transition-duration: 0.5s; }
+.padlock_display_animation:hover .padlock_ring_display { transform: translateY(-1.5vh); transition-duration: 0.5s; }
 
 .padlock_display_animation img { width: 70%; position: absolute; left: 15%; bottom: 0; transition-duration: 0.5s; z-index: 4; }
 
@@ -46,7 +46,9 @@ main { font-family: TruenoSBd; }
 
 .deadbolt_display_animation:hover .deadbolt_display { transform: rotate(60deg); transition-duration: 0.5s; }
 
-.deadbolt_display_animation img { width: 70%; position: absolute; left: 15%; bottom: -38px; transition-duration: 0.5s; z-index: 3; }
+.deadbolt_display_animation img { width: 70%; position: absolute; left: 15%; bottom: 0; transition-duration: 0.5s; z-index: 3; }
+
+.deadbolt_display_animation .deadbolt_display { bottom: -35px; }
 
 .mortise_display_animation { width: 13vw; height: 46vh; position: relative; }
 
@@ -70,7 +72,7 @@ main { font-family: TruenoSBd; }
 
 .productsComparesion { background-color: white; width: 100vw; height: 100vh; display: flex; flex-wrap: wrap; justify-content: center; align-items: center; }
 
-.productscomparesion_product1 { width: 46vw; height: 46vh; background-color: black; border-radius: 20px; margin: 0 2vh 0 0; display: flex; align-items: center; }
+.productscomparesion_product1 { width: 46vw; height: 46vh; background-color: black; border-radius: 20px; margin: 2vh; display: flex; align-items: center; }
 
 .productscomparesion_product1:hover .mortise_latch { transform: rotate(40deg); transition-duration: 0.5s; }
 
@@ -78,75 +80,80 @@ main { font-family: TruenoSBd; }
 
 .product1_containerImg img { position: absolute; top: 6%; left: -50%; width: 150%; transition-duration: 0.5s; }
 
+.product2_containerImg { width: 22%; height: 100%; margin-left: 4%; margin-right: 2%; position: relative; }
+
+.product2_containerImg img { position: absolute; top: 10%; left: 20%; width: 55%; transition-duration: 0.5s; }
+
+.product3_containerImg { width: 22%; height: 100%; margin-left: 4%; margin-right: 2%; position: relative; }
+
+.product3_containerImg img { position: absolute; top: 40%; left: -90%; width: 200%; transition-duration: 0.5s; }
+
+.product4_containerImg { width: 22%; height: 100%; margin-left: 4%; margin-right: 2%; position: relative; }
+
+.product4_containerImg img { position: absolute; top: 20%; left: 20%; width: 60%; transition-duration: 0.5s; }
+
+.productscomparesion_product1:hover .padlock_ring { transform: translatey(-2vh); transition-duration: 0.5s; }
+
 .productscomparesion_product1 .mortise_description { width: 72%; height: 80%; background-color: black; color: white; font-size: 1.5rem; display: flex; justify-content: center; flex-wrap: wrap; }
 
 .productscomparesion_product1 .mortise_description h2 { margin: 0 auto; }
 
-.products1_characteristic { width: 96%; height: 68%; text-align: center; }
+.products1_characteristic { width: 96%; height: 70%; display: flex; flex-direction: column; justify-content: center; flex-wrap: wrap; }
 
-.products1_characteristic img { width: 80%; height: 80%; }
+.fingerprint { width: 49%; height: 32%; display: flex; }
 
-.mortise_description .mortise_text { width: 100%; }
+.fingerprint img { width: 30%; margin-right: 10px; }
 
-.productscomparesion_product2 { width: 46vw; height: 46vh; background-color: black; border-radius: 20px; margin: 0 0 0 2vh; display: flex; align-items: center; }
+.application { width: 49%; height: 32%; display: flex; }
 
-.productscomparesion_product2:hover .deadbolt_latch { transform: rotate(60deg); transition-duration: 0.5s; }
+.application img { width: 30%; margin-right: 10px; }
 
-.product2_containerImg { width: 22%; height: 100%; margin-left: 4%; margin-right: 2%; position: relative; }
+.key { width: 49%; height: 32%; display: flex; }
 
-.product2_containerImg img { width: 50%; position: absolute; top: 20%; left: 15%; transition-duration: 0.5s; }
+.key img { width: 30%; margin-right: 10px; }
 
-.productscomparesion_product2 .deadbolt_description { width: 72%; height: 80%; background-color: black; color: white; font-size: 1.5rem; display: flex; justify-content: center; flex-wrap: wrap; }
+.bluetooth { width: 49%; height: 32%; display: flex; }
 
-.productscomparesion_product2 .deadbolt_description h2 { margin: 0 auto; }
+.bluetooth img { width: 30%; margin-right: 10px; }
 
-.productscomparesion_product2 .deadbolt_description img { width: 98%; height: 68%; }
+.code { width: 49%; height: 32%; display: flex; }
 
-.dead_description .deadbolt_text { width: 100%; }
+.code img { width: 30%; margin-right: 10px; }
 
-.productscomparesion_product3 { width: 46vw; height: 46vh; background-color: black; border-radius: 20px; margin: 0 2vh 0 0; display: flex; align-items: center; }
-
-.productscomparesion_product3:hover .product3_containerImg img { transform: rotate(40deg); transition-duration: 0.5s; }
-
-.product3_containerImg { width: 22%; height: 100%; margin-left: 4%; margin-right: 2%; position: relative; }
-
-.product3_containerImg img { width: 180%; position: absolute; top: 40%; left: -80%; transition-duration: 0.5s; }
-
-.productscomparesion_product3 .indoor_latch_description { width: 72%; height: 80%; background-color: black; color: white; font-size: 1.5rem; display: flex; justify-content: center; flex-wrap: wrap; }
-
-.productscomparesion_product3 .indoor_latch_description h2 { margin: 0 auto; }
-
-.productscomparesion_product3 .indoor_latch_description img { width: 98%; height: 68%; }
-
-.indoor_latch_description .indoor_latch_text { width: 100%; }
-
-.productscomparesion_product4 { width: 46vw; height: 46vh; background-color: black; border-radius: 20px; margin: 0 0 0 2vh; display: flex; align-items: center; }
-
-.productscomparesion_product4:hover .padlock_ring { transform: translateY(-23px); transition-duration: 0.5s; }
-
-.product4_containerImg { width: 22%; height: 100%; margin-left: 4%; margin-right: 2%; position: relative; }
-
-.product4_containerImg img { position: absolute; width: 60%; top: 25%; left: 10%; transition-duration: 0.5s; }
-
-.productscomparesion_product4 .padlock_description { width: 72%; height: 80%; background-color: black; color: white; font-size: 1.5rem; display: flex; justify-content: center; flex-wrap: wrap; }
-
-.productscomparesion_product4 .padlock_description h2 { margin: 0 auto; }
-
-.productscomparesion_product4 .padlock_description img { width: 98%; height: 68%; }
-
-.padlock_description .padlock_text { width: 100%; }
-
-.footerTest { width: 100vw; height: 10vh; background-color: red; }
-
-@media screen and (max-width: 1850px) { .productscomparesion_product1 { width: 45vw; }
-  .productscomparesion_product2 { width: 45vw; }
-  .productscomparesion_product3 { width: 45vw; }
-  .productscomparesion_product4 { width: 45vw; } }
-@media screen and (max-width: 1150px) { .productsDisplay_img { width: 80vw; margin: 0; }
+@media screen and (max-width: 1850px) { .displayAnimation { height: 350px; }
+  .padlock_display_animation { width: 12vw; }
+  .deadbolt_display_animation { width: 11vw; }
+  .mortise_display_animation { width: 16vw; }
+  .indoor_latch_display_animation { width: 18vw; }
+  .productscomparesion_product1 { width: 47vw; height: 50vh; margin: 1vh; }
+  .productsComparesion { height: 110vh; } }
+@media screen and (max-width: 1150px) { .displayAnimation { height: 250px; }
+  .padlock_display_animation { width: 14vw; }
+  .deadbolt_display_animation { width: 13vw; }
+  .mortise_display_animation { width: 20vw; }
+  .indoor_latch_display_animation { width: 20vw; }
+  .productsDisplayIntroduction { width: 350px; text-align: center; }
+  .productsDisplay_img { width: 80vw; margin: 0; }
   .productscomparesion_product1 { width: 80vw; margin: 2.5vh 0 1.5vh; }
-  .productscomparesion_product2 { width: 80vw; margin: 1.5vh 0 1.5vh; }
-  .productscomparesion_product3 { width: 80vw; margin: 1.5vh 0 1.5vh; }
-  .productscomparesion_product4 { width: 80vw; margin: 1.5vh 0 2.5vh; }
   .productsComparesion { height: 100%; } }
+footer { width: 100vw; height: 10vh; background-color: black; display: flex; justify-content: space-between; align-items: center; }
+
+.footer_gauche { display: flex; align-items: center; justify-content: space-between; }
+
+.footer_gauche a { text-decoration: none; }
+
+.facebook_footer { width: 1.5vw; margin: 0 2vw 0; }
+
+.youtube_footer { width: 4vw; margin: 0 2vw 0; }
+
+.kickstarter_footer { width: 2.5vw; margin: 0 2vw 0; }
+
+.footer_center { display: flex; align-items: center; }
+
+.keagoBlanc { width: 10vw; }
+
+.footer_droit { width: 20vw; text-align: center; }
+
+.mention_footer { color: white; text-decoration: none; font-size: 1.3vw; font-family: TruenoSBd; margin-right: 10vw; }
 
 /*# sourceMappingURL=style.css.map */

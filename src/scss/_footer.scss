@@ -1,0 +1,55 @@
+footer{
+  width: 100vw;
+  height: 10vh;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer_gauche{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer_gauche a{
+  text-decoration: none;
+}
+
+.facebook_footer{
+  width: 1.5vw;
+  margin: 0 2vw 0;
+}
+
+.youtube_footer{
+  width: 4vw;
+  margin: 0 2vw 0;
+}
+
+.kickstarter_footer{
+  width: 2.5vw;
+  margin: 0 2vw 0;
+}
+
+.footer_center{
+  display: flex;
+  align-items: center;
+}
+
+.keagoBlanc{
+  width: 10vw;
+}
+
+.footer_droit{
+  width: 20vw;
+  text-align: center;
+}
+
+.mention_footer{
+  color: white;
+  text-decoration: none;
+  font-size: 1.3vw;
+  font-family: TruenoSBd;
+  margin-right: 10vw;
+}
