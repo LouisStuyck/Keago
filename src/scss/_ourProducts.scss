@@ -1,0 +1,427 @@
+main{
+  font-family: TruenoSBd;
+}
+
+.productsDisplay{
+  height: 91vh;
+  min-height: 550px;
+  background-image: radial-gradient(circle at bottom left, rgba(248, 214, 9, 1), rgba(253, 80, 0, .5) 150%);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.displayAnimation{
+  position: relative;
+  width: 60vw;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.padlock_display_animation{
+  width: 8vw;
+  height: 20vh;
+  position: relative;
+}
+
+.padlock_display_animation:hover{
+  .padlock_ring_display{
+    transform: translateY(-22px);
+    transition-duration: 0.5s;
+  }
+}
+
+.padlock_display_animation img{
+  width: 70%;
+  position: absolute;
+  left: 15%;
+  transition-duration: 0.5s;
+  z-index: 4;
+}
+
+.deadbolt_display_animation{
+  width: 8vw;
+  height: 35vh;
+  position: relative;
+}
+
+.deadbolt_display_animation:hover{
+  .deadbolt_display{
+    transform:rotate(60deg);
+    transition-duration: 0.5s;
+  }
+}
+
+.deadbolt_display_animation img{
+  width: 70%;
+  position: absolute;
+  left: 15%;
+  transition-duration: 0.5s;
+  z-index: 3;
+}
+
+.mortise_display_animation{
+  width: 13vw;
+  height: 46vh;
+  position: relative;
+}
+
+.mortise_display_animation:hover{
+  .mortise_display{
+    transform:rotate(30deg);
+    transition-duration: 0.5s;
+  }
+}
+
+.mortise_display_animation img{
+  width: 140%;
+  position: absolute;
+  left: -20%;
+  transition-duration: 0.5s;
+  z-index: 2;
+}
+
+.indoor_latch_display_animation{
+  width: 15vw;
+  height: 13vh;
+  position: relative;
+}
+
+.indoor_latch_display_animation:hover{
+  .indoor_latch_display{
+    transform:rotate(30deg);
+    transition-duration: 0.5s;
+  }
+}
+
+.indoor_latch_display_animation img{
+  width: 160%;
+  position: absolute;
+  left: -50%;
+  bottom: 0;
+  transition-duration: 0.5s;
+  z-index: 1;
+}
+
+.productsDisplay_img{
+  width: 60vw;
+  margin-left: 19vw;
+  margin-top: 10vh;
+}
+
+.productsDisplay_button{
+  margin-top: 7vh;
+  text-decoration: none;
+  color: white;
+  width: 250px;
+  background-color: black;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.productsDisplay_button:hover{
+  color: black;
+  background-color: white;
+  transition: All 0.2s ease-in;
+}
+
+.productsComparesion{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.productscomparesion_product1{
+  width: 46vw;
+  height: 46vh;
+  background-color: black;
+  border-radius: 20px;
+  margin: 0 2vh 0 0;
+  display: flex;
+  align-items: center;
+}
+
+.productscomparesion_product1:hover{
+  .mortise_latch{
+    transform:rotate(40deg);
+    transition-duration: 0.5s;
+  }
+}
+
+.product1_containerImg{
+  width: 22%;
+  height: 100%;
+  margin-left: 4%;
+  margin-right: 2%;
+  position: relative;
+}
+
+.product1_containerImg img{
+  position: absolute;
+  top: 6%;
+  left: -50%;
+  width: 150%;
+  transition-duration: 0.5s;
+}
+
+.productscomparesion_product1 .mortise_description{
+  width: 72%;
+  height: 80%;
+  background-color: black;
+  color: white;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.productscomparesion_product1 .mortise_description h2{
+  margin: 0 auto;
+}
+
+.products1_characteristic{
+  width: 96%;
+  height: 68%;
+  text-align: center;
+}
+
+.products1_characteristic img{
+  width: 80%;
+  height: 80%;
+}
+
+.mortise_description .mortise_text{
+  width: 100%;
+}
+
+.productscomparesion_product2{
+  width: 46vw;
+  height: 46vh;
+  background-color: black;
+  border-radius: 20px;
+  margin: 0 0 0 2vh;
+  display: flex;
+  align-items: center;
+}
+
+.productscomparesion_product2:hover{
+  .deadbolt_latch{
+    transform:rotate(60deg);
+    transition-duration: 0.5s;
+  }
+}
+
+.product2_containerImg{
+  width: 22%;
+  height: 100%;
+  margin-left: 4%;
+  margin-right: 2%;
+  position: relative;
+}
+
+.product2_containerImg img{
+  width: 50%;
+  position: absolute;
+  top: 20%;
+  left: 15%;
+  transition-duration: 0.5s;
+}
+
+.productscomparesion_product2 .deadbolt_description{
+  width: 72%;
+  height: 80%;
+  background-color: black;
+  color: white;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.productscomparesion_product2 .deadbolt_description h2{
+  margin: 0 auto;
+}
+
+.productscomparesion_product2 .deadbolt_description img{
+  width: 98%;
+  height: 68%;
+}
+
+.dead_description .deadbolt_text{
+  width: 100%;
+}
+
+.productscomparesion_product3{
+  width: 46vw;
+  height: 46vh;
+  background-color: black;
+  border-radius: 20px;
+  margin: 0 2vh 0 0;
+  display: flex;
+  align-items: center;
+}
+
+.productscomparesion_product3:hover{
+  .product3_containerImg img{
+    transform:rotate(40deg);
+    transition-duration: 0.5s;
+  }
+}
+
+.product3_containerImg{
+  width: 22%;
+  height: 100%;
+  margin-left: 4%;
+  margin-right: 2%;
+  position: relative;
+}
+
+.product3_containerImg img{
+  width: 180%;
+  position: absolute;
+  top: 40%;
+  left: -80%;
+  transition-duration: 0.5s;
+}
+
+.productscomparesion_product3 .indoor_latch_description{
+  width: 72%;
+  height: 80%;
+  background-color: black;
+  color: white;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.productscomparesion_product3 .indoor_latch_description h2{
+  margin: 0 auto;
+}
+
+.productscomparesion_product3 .indoor_latch_description img{
+  width: 98%;
+  height: 68%;
+}
+
+.indoor_latch_description .indoor_latch_text{
+  width: 100%;
+}
+
+.productscomparesion_product4{
+  width: 46vw;
+  height: 46vh;
+  background-color: black;
+  border-radius: 20px;
+  margin: 0 0 0 2vh;
+  display: flex;
+  align-items: center;
+}
+
+.productscomparesion_product4:hover{
+  .padlock_ring{
+    transform: translateY(-23px);
+    transition-duration: 0.5s;
+  }
+}
+
+.product4_containerImg{
+  width: 22%;
+  height: 100%;
+  margin-left: 4%;
+  margin-right: 2%;
+  position: relative;
+}
+
+.product4_containerImg img{
+  position: absolute;
+  width: 60%;
+  top: 25%;
+  left: 10%;
+  transition-duration: 0.5s;
+}
+
+.productscomparesion_product4 .padlock_description{
+  width: 72%;
+  height: 80%;
+  background-color: black;
+  color: white;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.productscomparesion_product4 .padlock_description h2{
+  margin: 0 auto;
+}
+
+.productscomparesion_product4 .padlock_description img{
+  width: 98%;
+  height: 68%;
+}
+
+.padlock_description .padlock_text{
+  width: 100%;
+}
+
+.footerTest{
+  width: 100vw;
+  height: 10vh;
+  background-color: red;
+}
+
+@media screen and (max-width : 1850px){
+  .productscomparesion_product1{
+    width: 45vw;
+  }
+
+  .productscomparesion_product2{
+    width: 45vw;
+  }
+
+  .productscomparesion_product3{
+    width: 45vw;
+  }
+
+  .productscomparesion_product4{
+    width: 45vw;
+  }
+}
+
+@media screen and (max-width : 1150px){
+  .productsDisplay_img{
+    width: 80vw;
+    margin: 0;
+  }
+
+  .productscomparesion_product1{
+    width: 80vw;
+    margin: 2.5vh 0 1.5vh;
+  }
+
+  .productscomparesion_product2{
+    width: 80vw;
+    margin: 1.5vh 0 1.5vh;
+  }
+
+  .productscomparesion_product3{
+    width: 80vw;
+    margin: 1.5vh 0 1.5vh;
+  }
+
+  .productscomparesion_product4{
+    width: 80vw;
+    margin: 1.5vh 0 2.5vh;
+  }
+  .productsComparesion{
+    height: 100%;
+  }
+}
