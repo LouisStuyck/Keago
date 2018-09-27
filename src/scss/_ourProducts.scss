@@ -4,7 +4,7 @@ main{
 
 .productsDisplay{
   height: 91vh;
-  min-height: 550px;
+  min-height: 700px;
   background-image: radial-gradient(circle at bottom left, rgba(248, 214, 9, 1), rgba(253, 80, 0, .5) 150%);
   display: flex;
   align-items: center;
@@ -14,7 +14,7 @@ main{
 .displayAnimation{
   position: relative;
   width: 60vw;
-  height: 60vh;
+  height: 500px;
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -37,6 +37,7 @@ main{
   width: 70%;
   position: absolute;
   left: 15%;
+  bottom: 0;
   transition-duration: 0.5s;
   z-index: 4;
 }
@@ -58,6 +59,7 @@ main{
   width: 70%;
   position: absolute;
   left: 15%;
+  bottom: -38px;
   transition-duration: 0.5s;
   z-index: 3;
 }
@@ -79,6 +81,7 @@ main{
   width: 140%;
   position: absolute;
   left: -20%;
+  bottom: 0;
   transition-duration: 0.5s;
   z-index: 2;
 }
@@ -111,8 +114,12 @@ main{
   margin-top: 10vh;
 }
 
+.productsDisplayIntroduction{
+  margin-top: 3vh;
+}
+
 .productsDisplay_button{
-  margin-top: 7vh;
+  margin-top: 3vh;
   text-decoration: none;
   color: white;
   width: 250px;
@@ -130,6 +137,7 @@ main{
 }
 
 .productsComparesion{
+  background-color: white;
   width: 100vw;
   height: 100vh;
   display: flex;
