@@ -1,8 +1,8 @@
 @font-face {
 	font-family: "TruenoSBd";
-	src: url("../../fonts/TruenoSBd.woff") format("woff"),
-		 url("../../fonts/TruenoSBd.woff2") format("woff2"),
-     url("../../fonts/TruenoSBd.otf") format("otf");
+	src: url("../fonts/TruenoSBd.woff") format("woff"),
+		 url("../fonts/TruenoSBd.woff2") format("woff2"),
+     url("../fonts/TruenoSBd.otf") format("otf");
 };
 
 body { margin: 0 auto; background: #f8d609; }
