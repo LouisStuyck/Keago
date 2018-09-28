@@ -3,3 +3,10 @@
 @import "ourProducts";
 @import "footer";
 @import "aboutUs";
+
+@font-face {
+	font-family: "TruenoSBd";
+	src: url("../../fonts/TruenoSBd.woff") format("woff"),
+		 url("../../fonts/TruenoSBd.woff2") format("woff2"),
+     url("../../fonts/TruenoSBd.otf") format("otf");
+};
