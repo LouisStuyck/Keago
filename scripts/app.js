@@ -5,7 +5,7 @@ window.addEventListener("scroll", function (){
         next.style.opacity = value/3;
     }
 
-    if (scroll > 500) {
+    if (scroll > 20) {
         document.getElementById("navbar").style.top = "0";
       } else {
         document.getElementById("navbar").style.top = "-200px";
