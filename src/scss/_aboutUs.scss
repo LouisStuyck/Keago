@@ -78,6 +78,11 @@ body{
   transition: all ease-in 0.2s;
 }
 
+#to-copy {
+  position: fixed;
+  bottom: -1000px;
+}
+
 @media screen and (max-width : 1470px){
   .howAreWe_allVisual{
     width: 70vw;

@@ -187,6 +187,8 @@ body { background-color: white; background-image: radial-gradient(50% 400%, rgba
 
 .email_button:hover { background-color: #F8D609; color: black; transition: all ease-in 0.2s; }
 
+#to-copy { position: fixed; bottom: -1000px; }
+
 @media screen and (max-width: 1470px) { .howAreWe_allVisual { width: 70vw; }
   .howAreWe_Visual { width: 30%; }
   .timeline_visual { top: -20vh; } }

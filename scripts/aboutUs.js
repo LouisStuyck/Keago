@@ -1,7 +1,8 @@
-var email  = "keagoteam@gmail.com",
-    btnCopy = document.getElementById( 'copy' ),
-    paste   = document.getElementById( 'cleared' );
+let toCopy  = document.getElementById( 'to-copy' ),
+    btnCopy = document.getElementById( 'copy' );
 
 btnCopy.addEventListener( 'click', function(){
-  email.select();
-  paste.value = email;
+	toCopy.select();
+	document.execCommand( 'copy' );
+	return false;
+} );
