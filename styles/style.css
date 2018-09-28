@@ -186,4 +186,11 @@ body { background-color: white; background-image: radial-gradient(50% 400%, rgba
 
 .email_button:hover { transition: all ease-in 0.2s; color: black; background-color: #F8D609; }
 
+@media screen and (max-width: 1470px) { .howAreWe_allVisual { width: 70vw; }
+  .howAreWe_Visual { width: 30%; }
+  .timeline_visual { top: -20vh; } }
+@media screen and (max-width: 1150px) { .howAreWe_allVisual { width: 80vw; }
+  .howAreWe_Visual { width: 30%; }
+  .timeline_visual { top: -8vh; } }
+
 /*# sourceMappingURL=style.css.map */

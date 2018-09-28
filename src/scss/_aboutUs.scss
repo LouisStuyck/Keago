@@ -71,3 +71,31 @@ body{
   color: black;
   background-color: #F8D609;
 }
+
+@media screen and (max-width : 1470px){
+  .howAreWe_allVisual{
+    width: 70vw;
+  }
+
+  .howAreWe_Visual{
+    width: 30%;
+  }
+
+  .timeline_visual{
+    top: -20vh;
+  }
+}
+
+@media screen and (max-width : 1150px){
+  .howAreWe_allVisual{
+    width: 80vw;
+  }
+
+  .howAreWe_Visual{
+    width: 30%;
+  }
+
+  .timeline_visual{
+    top: -8vh;
+  }
+}
