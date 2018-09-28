@@ -6,7 +6,7 @@
 };
 body { margin: 0 auto; background: #f8d609; }
 
-header { margin: 0 auto; height: 9vh; min-width: 320px; min-height: 100px; background: black; display: flex; align-items: center; font-family: 'TruenoRg'; font-size: 19px; }
+header { margin: 0 auto; height: 9vh; min-width: 320px; min-height: 100px; background: black; display: flex; align-items: center; font-family: 'TruenoSBd'; font-size: 19px; }
 
 header img { margin: 0 0 0 5vh; width: 18vh; min-width: 197px; min-height: 63px; }
 
