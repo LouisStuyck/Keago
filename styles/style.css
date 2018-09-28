@@ -166,13 +166,13 @@ body { background-color: white; background-image: radial-gradient(50% 400%, rgba
 
 .howAreWe_allVisual { display: flex; justify-content: space-between; width: 60vw; margin: 0 auto; }
 
-.howAreWe_Visual { width: 25%; text-align: center; font-size: 20px; }
+.howAreWe_Visual { width: 25%; display: flex; text-align: center; flex-direction: column; align-items: center; justify-content: center; font-size: 20px; }
 
-.team_visual { width: 100%; }
+.team_visual { width: 60%; }
 
-.australia_visual { width: 127%; }
+.australia_visual { width: 80%; }
 
-.locked_visual { width: 68%; }
+.locked_visual { width: 50%; }
 
 .ourStory_container { height: 50vh; position: relative; }
 
