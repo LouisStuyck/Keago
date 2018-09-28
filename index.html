@@ -1,24 +1,48 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <title>Modèle de page</title>
-    <meta charset="UTF-8">
     <meta name="description" content="Contenu de ma page">
-    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
-    <meta name="author" content="Louis Stuyck">
+    <meta name="author" content="Équipe 20 P2022 HÉTIC">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fonts/TruenoRg.otf">
+    <link rel="stylesheet" href="fonts/TruenoSBd.otf">
     <link rel="stylesheet" href="styles/style.css"/>
+    <link rel="stylesheet" href="styles/homePage.css"/>
   </head>
   <body>
-    <nav>
-      <div class="logo"></div>
-    </nav>
+    <header id="navbar">
+      <div class="burgerMenu">
+        <nav>
+          <div id="menuToggle">
+            <input type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul id="menu">
+              <a href="ourProducts.html" class="burgerOption"><li>OUR PRODUCTS</li></a>
+              <a href="aboutUs.html" class="burgerOption"><li>ABOUT US</li></a>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <a href="index.html" class="keagoLogo">
+        <img src="images/keago_logo.png" alt="logo">
+      </a>
+      <a href="ourProducts.html" class="header_option1">
+        <h2>OUR PRODUCTS</h2>
+      </a>
+      <a href="aboutUs.html"  class="header_option2">
+        <h2>ABOUT US</h2>
+      </a>
+    </header>
     <main>
+      <div class="logoHome"></div>
       <div class="newProd"> <!-- Produit Phare -->
         <div class="description">
             <div class="txt">
-                <h1>A Smartlock <br/> Without Limits</h1>
+                <h1>A Smartlock Without Limits</h1>
                 <p>Ensure safety</p>
                 <p>Easy to install</p>
                 <p>Military grade encryption</p>
@@ -32,7 +56,7 @@
       <div class="newPres" id="newPres"> <!-- Presentation Produit Phare -->
         <div class="presProduct"></div>
         <div class="presTxt">
-          <h1>Keago, our Smartlocks<br/>for <span>your security</span></h1>
+          <h1>Keago, our Smartlocks for<br/><span>your security</span></h1>
           <ul>
             <li>The control in your hands</li>
             <li>A Innovative technologie</li>
@@ -46,11 +70,22 @@
           <div class="container">
             <div class="txtMob">
               <div class="txtMob_1">
-                  <h1>Access to you Smartlock <span>everywhere everytime</span> you need it</h1>
-                  <p>Easy to use</p>
-                  <p class="slide_1">With the simply and intuitive interface, choose with ease how to manage your basic Smartlock tools.</p>
-                  <p class="slide_2">The Keago Security app is avalable on android and iOS devices.</p>
-                  <p class="slide_3">Une initialisation simple et rapide.</p>
+                  <div class="slide_1">
+                    <h1>Access to you Smartlock <span>everywhere everytime</span> you need it</h1>
+                    <h3>Easy to use</h3>
+                    <p>With the simply and intuitive interface, choose with ease how to manage your basic Smartlock tools.</p> 
+                    <p>The Keago Security app is avalable on android and iOS devices.</p>
+                  </div>
+                  <div class="slide_2">
+                    <h1>Change your <span>security</span> system in a <span>Snap</span></h1>
+                    <h3>Manage your security </h3>
+                    <p>For every Smartlocks manage, wich way you want your Smartlock to lock and unlock.</p>
+                  </div>
+                  <div class="slide_3">
+                    <h1>Choose <span>who</span> can enter your space</h1>
+                    <h3>Allow users whenever you want</h3>
+                    <p>got an unexpectation, whitelist the people you want to access your space</p>
+                  </div>
               </div>
               <div class="progress">
                 <div class="progress-container">
@@ -93,12 +128,25 @@
       </div>
     </main>
     <footer>
-      <div class="reseau">
-        <div class="face"></div>
-        <div class="you"></div>
-        <div class="k"></div>
+      <div class="footer_gauche">
+        <a href="https://www.facebook.com/Keago-292003278266634/" class="facebook_footer">
+          <img src="images/facebook.svg" alt="facebook">
+        </a>
+        <a href="https://www.youtube.com/channel/UCvaeQJ1NVWll8ampbkIwUQw" class="youtube_footer">
+          <img src="images/youtube.svg" alt="youtube">
+        </a>
+        <a href="https://www.kickstarter.com/projects/2118084512/keago-a-smartlock-without-limits?ref=557109&token=0f8d92ff" class="kickstarter_footer">
+          <img src="images/kickstarter.svg" alt="kickstarter">
+        </a>
       </div>
-      <a href="#">Nous contacter</a>
+      <div class="footer_center">
+        <a href="index.html" class="keagoBlanc">
+          <img src="images/keagoBlanc.svg" alt="keago" >
+        </a>
+      </div>
+      <div class="footer_droit">
+        <a href="#" class="mention_footer">Legal mention</a>
+      </div>
     </footer>
     <script src="scripts/app.js"></script>
   </body>

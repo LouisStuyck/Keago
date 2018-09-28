@@ -4,6 +4,12 @@ window.addEventListener("scroll", function (){
     if (value > 0.25) { 
         next.style.opacity = value/3;
     }
+
+    if (scroll > 500) {
+        document.getElementById("navbar").style.top = "0";
+      } else {
+        document.getElementById("navbar").style.top = "-200px";
+      }
     
     let parallaxStart = document.querySelector('.parallax_1'), parallaxEnd = document.querySelector('.parallax_3'), pos = -1 * position, refPara = (window.pageYOffset) - (1*window.innerHeight), diviseur = 0;
     if (heightWindow < 1500){
@@ -84,7 +90,7 @@ window.addEventListener("scroll", function (){
     }
 
     if (window.innerWidth <= 800 ) {
-        parallaxStart.style.backgroundAttachment = 'unset';
+        parallaxStart.style.backgroundAttachment = 'fixed';
     }
 });
 
@@ -96,8 +102,33 @@ function progressBarScroll() {
         slideOne = document.querySelector(".slide_1"),
         slideTwo = document.querySelector(".slide_2"),
         slideThree = document.querySelector(".slide_3");
+        if (0 < refPara) {
+            slideOne.style.display = 'inline';
+            slideTwo.style.display = 'none';
+            slideThree.style.display = 'none';
+            if (15 < refPara) {
+                slideOne.style.display = 'none';
+                slideTwo.style.display = 'inline';
+                slideThree.style.display = 'none';
+                if (30 < refPara) {
+                    slideOne.style.display = 'none';
+                    slideTwo.style.display = 'none';
+                    slideThree.style.display = 'inline';
+                }
+            }
+        }
+        if (window.innerWidth <= 800){
+            slideOne.style.display = 'inline';
+            slideTwo.style.display = 'inline';
+            slideThree.style.display = 'inline';
+        }
+        if (window.innerHeight <= 600){
+            slideOne.style.display = 'inline';
+            slideTwo.style.display = 'inline';
+            slideThree.style.display = 'inline';
+        }
         
-        console.log(window.innerHeight);
+        console.log(refPara);
         
     document.getElementById("progressBar").style.height = refPara + "vh";
     

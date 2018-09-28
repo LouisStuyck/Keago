@@ -1,31 +1,16 @@
-/*# sourceMappingURL=style.css.map */
-html {
-    margin: 0;
-}
-
-body {
-    background-color: #f8d609;
-    margin: 0;
-}
-
 span {
     color: #FC7700;
 }
 
-/** Navigation/Menu Start **/
-
-nav .logo {
-    background: url('../img/logo.svg') no-repeat;
+.logoHome {
+    background: url('../images/logo.svg') no-repeat;
     background-size: cover;
     width: 200px;
     height: 61px;
     position: absolute;
-    z-index: 999;
-    top: 20px;
-    left: 50px;
+    top: 18px;
+    left: 36px;
 }
-
-/** Navigation/Menu End **/
 
 /** Produit Phare Start **/
 
@@ -73,7 +58,7 @@ nav .logo {
 }
 
 .newProd .produit {
-    background: url('../img/serrure.png') no-repeat;
+    background: url('../images/serrure.png') no-repeat;
     background-position: bottom 0 right 100px;
     background-size: 45%;
     background-attachment: fixed;
@@ -85,7 +70,7 @@ nav .logo {
     width: 100vw;
     height: 50px;
     background-color: #161212;
-    background-image: url("../img/down-arrow.svg");
+    background-image: url("../images/down-arrow.svg");
     background-size: 40px;
     background-repeat: no-repeat;
     background-position: center;
@@ -116,7 +101,7 @@ nav .logo {
         min-height: 460px;
     }
     .newProd .produit {
-        background: url('../img/serrure.png') no-repeat;
+        background: url('../images/serrure.png') no-repeat;
         background-position: bottom 0 right 50%;
         right: 50%;
         top: 50%;
@@ -187,7 +172,7 @@ nav .logo {
 
 .newPres .presProduct {
     width: 50vw;
-    background-image: url("../img/hotProduct.png");
+    background-image: url("../images/hotProduct.png");
     background-repeat: no-repeat;
     background-size: 20vw;
     background-position: top 50% left 50%;
@@ -269,7 +254,7 @@ nav .logo {
 }
 
 .parallax_1 {
-    background: url('../img/appliA.png') no-repeat center;
+    background: url('../images/appliA.png') no-repeat center;
     background-size: 300px;
     background-position-x: 90%;
     height: 700px;
@@ -277,7 +262,7 @@ nav .logo {
     width: 50vw;
 }
 .parallax_2 {
-    background: url('../img/appliB.png') no-repeat center;
+    background: url('../images/appliB.png') no-repeat center;
     background-size: 300px;
     background-position-x: 90%;
     background-attachment: fixed;
@@ -286,7 +271,7 @@ nav .logo {
     margin-left: 45vw;
 }
 .parallax_3 {
-    background: url('../img/appliC.png') no-repeat center;
+    background: url('../images/appliC.png') no-repeat center;
     background-size: 300px;
     background-position-x: 90%;
     height: 700px;
@@ -326,6 +311,7 @@ nav .logo {
 .txtMob p {
     margin: 10px 0;
     color: white;
+    font-size: 20px;
 }
 
 .progress {
@@ -336,14 +322,14 @@ nav .logo {
 }
   
 .progress-container {
-    background: url(../img/A.svg) no-repeat;
+    background: url(../images/A.svg) no-repeat;
     background-size: 20px;  
     height: 760px;
     width: 20px;
 }
   
 .progress-bar {
-    background: url(../img/B.svg) no-repeat;
+    background: url(../images/B.svg) no-repeat;
     background-size: 20px;
     height: 0vh;
     width: 20px;
@@ -355,6 +341,7 @@ nav .logo {
     }
     .parallax_1 {
         background-size: 200px;
+        min-height: 1500px;
     }
 
     .txtMob{
@@ -362,7 +349,16 @@ nav .logo {
         width: 90%;
         margin: 15% 0 0 20px;
         left: 0;
-        height: 550px;
+        height: auto;
+        padding-bottom: 20px;
+    }
+
+    .appMob {
+        height: auto;
+    }
+
+    .appMob .container {
+        height: auto;
     }
 
     .progress {
@@ -380,6 +376,7 @@ nav .logo {
     }
     .parallax_1 {
         background-size: 200px;
+        min-height: 2000px;
     }
 
     .txtMob{
@@ -388,22 +385,38 @@ nav .logo {
         margin: 15% 0 0 20px;
         left: 0;
         height: auto;
+        padding-bottom: 20px;
     }
 
     .progress {
         display: none;
+    }
+
+    .appMob {
+        height: auto;
+    }
+
+    .appMob .container {
+        height: auto;
     }
 }
 @media screen and (max-width: 600px) {
     .parallax_1, .parallax_2, .parallax_3 {
         background-size: 100px;
     }
+
+    .parallax_1 {
+        background-size: 100px;
+        min-height: 1900px;
+    }
+
     .txtMob{
         position: relative;
         width: 90%;
         margin: 15% 0 0 20px;
         left: 0;
-        height: 550px;
+        height: auto;
+        padding-bottom: 20px;
     }
 
     .progress {
@@ -415,11 +428,15 @@ nav .logo {
     }
 
     .appMob {
-        height: 700px;
+        height: auto;
     }
 
     .appMob h1 {
         font-size: 40px;
+    }
+
+    .appMob .container {
+        height: auto;
     }
 }
 
@@ -434,7 +451,7 @@ nav .logo {
     align-items: center;
     margin: 0;
     padding: 20px 0;
-    background-image: radial-gradient(at bottom left, rgb(250, 250, 250), black 500%);
+    background-image: radial-gradient(at bottom left, rgb(250, 250, 250), black 200%);
 }
 
 .safe .traitHor {
@@ -465,14 +482,14 @@ nav .logo {
 }
 
 .imgLock {
-    background: url('../img/lock.svg') no-repeat;
+    background: url('../images/lock.svg') no-repeat;
     background-size: 100px;
     margin-left: 50px;
 }
 
 .imgSecurity {
-    background: url('../img/lock.svg') no-repeat;
-    background-size: 100px;
+    background: url('../images/security.svg') no-repeat;
+    background-size: 85px;
     margin-right: 50px;
 }
 
@@ -560,28 +577,3 @@ nav .logo {
 
 }
 /** Lien End **/
-
-/** Footer **/
-footer {
-    width: 100%;
-    height: 50px;
-    background: url(../img/logo.svg) no-repeat center black; 
-    background-size: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-footer .reseau {
-    background: white;
-    height: 100%;
-    width: 100px;
-    margin-left: 20px;
-}
-
-footer a {
-    color: white;
-    text-decoration: none;
-    font-size: 20px;
-    margin-right: 20px;
-}

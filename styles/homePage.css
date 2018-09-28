@@ -1,0 +1,7 @@
+header{
+  position: fixed;
+  top: -200px;
+  z-index: 99;
+  transition: top 0.5s;
+}
+

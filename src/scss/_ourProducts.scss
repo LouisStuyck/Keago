@@ -1,0 +1,398 @@
+main{
+  font-family: "TruenoSBd";
+}
+
+.ourProductsColor{
+  color: #F8D609;
+}
+
+.productsDisplay{
+  height: 91vh;
+  min-height: 700px;
+  background-image: radial-gradient(circle at bottom left, rgba(248, 214, 9, 1), rgba(253, 80, 0, .5) 150%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.displayAnimation{
+  position: relative;
+  width: 60vw;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.padlock_display_animation{
+  width: 8vw;
+  height: 20vh;
+  position: relative;
+}
+
+.padlock_display_animation:hover{
+  .padlock_ring_display{
+    transform: translateY(-1.5vh);
+    transition-duration: 0.5s;
+  }
+}
+
+.padlock_display_animation img{
+  width: 70%;
+  position: absolute;
+  left: 15%;
+  bottom: 0;
+  transition-duration: 0.5s;
+  z-index: 4;
+}
+
+.deadbolt_display_animation{
+  width: 8vw;
+  height: 35vh;
+  position: relative;
+}
+
+.deadbolt_display_animation:hover{
+  .deadbolt_display{
+    transform:rotate(60deg);
+    transition-duration: 0.5s;
+  }
+}
+
+.deadbolt_display_animation img{
+  width: 70%;
+  position: absolute;
+  left: 15%;
+  bottom:0;
+  transition-duration: 0.5s;
+  z-index: 3;
+}
+
+.deadbolt_display_animation .deadbolt_display{
+  bottom: -35px;
+}
+
+.mortise_display_animation{
+  width: 13vw;
+  height: 46vh;
+  position: relative;
+}
+
+.mortise_display_animation:hover{
+  .mortise_display{
+    transform:rotate(30deg);
+    transition-duration: 0.5s;
+  }
+}
+
+.mortise_display_animation img{
+  width: 140%;
+  position: absolute;
+  left: -20%;
+  bottom: 0;
+  transition-duration: 0.5s;
+  z-index: 2;
+}
+
+.indoor_latch_display_animation{
+  width: 15vw;
+  height: 13vh;
+  position: relative;
+}
+
+.indoor_latch_display_animation:hover{
+  .indoor_latch_display{
+    transform:rotate(30deg);
+    transition-duration: 0.5s;
+  }
+}
+
+.indoor_latch_display_animation img{
+  width: 160%;
+  position: absolute;
+  left: -50%;
+  bottom: 0;
+  transition-duration: 0.5s;
+  z-index: 1;
+}
+
+.productsDisplay_img{
+  width: 60vw;
+  margin-left: 19vw;
+  margin-top: 10vh;
+}
+
+.productsDisplayIntroduction{
+  margin-top: 3vh;
+}
+
+.productsDisplay_button{
+  margin-top: 3vh;
+  text-decoration: none;
+  color: white;
+  width: 250px;
+  background-color: black;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.productsDisplay_button:hover{
+  color: black;
+  background-color: white;
+  transition: All 0.2s ease-in;
+}
+
+.productsComparesion{
+  background-color: white;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.productscomparesion_product{
+  width: 46vw;
+  height: 46vh;
+  background-color: black;
+  border-radius: 20px;
+  margin: 2vh;
+  display: flex;
+  align-items: center;
+}
+
+.productscomparesion_product:hover{
+  .latch_rotation{
+    transform:rotate(40deg);
+    transition-duration: 0.5s;
+  }
+}
+
+.product1_containerImg{
+  width: 22%;
+  height: 100%;
+  margin-left: 4%;
+  margin-right: 2%;
+  position: relative;
+}
+
+.product1_containerImg img{
+  position: absolute;
+  top: 6%;
+  left: -50%;
+  width: 150%;
+  transition-duration: 0.5s;
+}
+
+.product2_containerImg{
+  width: 22%;
+  height: 100%;
+  margin-left: 4%;
+  margin-right: 2%;
+  position: relative;
+}
+
+.product2_containerImg img{
+  position: absolute;
+  top: 10%;
+  left: 20%;
+  width: 55%;
+  transition-duration: 0.5s;
+}
+
+.product3_containerImg{
+  width: 22%;
+  height: 100%;
+  margin-left: 4%;
+  margin-right: 2%;
+  position: relative;
+}
+
+.product3_containerImg img{
+  position: absolute;
+  top: 40%;
+  left: -90%;
+  width: 200%;
+  transition-duration: 0.5s;
+}
+
+.product4_containerImg{
+  width: 22%;
+  height: 100%;
+  margin-left: 4%;
+  margin-right: 2%;
+  position: relative;
+}
+
+.product4_containerImg img{
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  width: 60%;
+  transition-duration: 0.5s;
+}
+
+.productscomparesion_product:hover{
+  .padlock_ring{
+    transform:translatey(-2vh);
+    transition-duration: 0.5s;
+  }
+}
+
+.productscomparesion_product .object_description{
+  width: 72%;
+  height: 80%;
+  background-color: black;
+  color: white;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.productscomparesion_product .object_description h2{
+  margin: 0 auto;
+}
+
+.products_characteristic{
+  width: 96%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.fingerprint{
+  width: 49%;
+  height: 32%;
+  display: flex;
+}
+
+.fingerprint img{
+  width: 30%;
+  margin-right: 10px;
+}
+
+.application{
+  width: 49%;
+  height: 32%;
+  display: flex;
+}
+
+.application img{
+  width: 30%;
+  margin-right: 10px;
+}
+
+.key{
+  width: 49%;
+  height: 32%;
+  display: flex;
+}
+
+.key img{
+  width: 30%;
+  margin-right: 10px;
+}
+
+.bluetooth{
+  width: 49%;
+  height: 32%;
+  display: flex;
+}
+
+.bluetooth img{
+  width: 30%;
+  margin-right: 10px;
+}
+
+.code{
+  width: 49%;
+  height: 32%;
+  display: flex;
+}
+
+.code img{
+  width: 30%;
+  margin-right: 10px;
+}
+
+@media screen and (max-width : 1850px){
+  .displayAnimation{
+    height: 350px;
+  }
+
+  .padlock_display_animation{
+    width: 12vw;
+  }
+
+  .deadbolt_display_animation{
+    width: 11vw;
+  }
+
+  .mortise_display_animation{
+    width: 16vw;
+  }
+
+  .indoor_latch_display_animation{
+    width: 18vw;
+  }
+
+  .productscomparesion_product{
+    width: 47vw;
+    height: 50vh;
+    margin: 1vh;
+  }
+
+  .productsComparesion{
+    height: 110vh;
+  }
+
+}
+
+@media screen and (max-width : 1150px){
+
+  .displayAnimation{
+    height: 250px;
+  }
+
+  .padlock_display_animation{
+    width: 14vw;
+  }
+
+  .deadbolt_display_animation{
+    width: 13vw;
+  }
+
+  .mortise_display_animation{
+    width: 20vw;
+  }
+
+  .indoor_latch_display_animation{
+    width: 20vw;
+  }
+
+  .productsDisplayIntroduction{
+    width: 350px;
+    text-align: center;
+  }
+
+  .productsDisplay_img{
+    width: 80vw;
+    margin: 0;
+  }
+
+  .productscomparesion_product{
+    width: 80vw;
+    margin: 2.5vh 0 1.5vh;
+  }
+
+  .productsComparesion{
+    height: 100%;
+  }
+}
