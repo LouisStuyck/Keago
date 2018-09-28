@@ -8,6 +8,10 @@ body {
     margin: 0;
 }
 
+span {
+    color: #FC7700;
+}
+
 /** Navigation/Menu Start **/
 
 nav .logo {
@@ -197,13 +201,6 @@ nav .logo {
 }
 
 .newPres .presTxt h1 {
-}
-.newPres .presTxt .trait {
-    background-image: linear-gradient(to right, #f8d609 , #FF9100 70%);
-    border-radius: 5px;
-    height: 2px;
-    width: 150px; 
-    margin-top: -20px; 
 }
 
 .newPres .presTxt li {

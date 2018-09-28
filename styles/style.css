@@ -4,6 +4,8 @@ html { margin: 0; }
 
 body { background-color: #f8d609; margin: 0; }
 
+span { color: #FC7700; }
+
 /** Navigation/Menu Start **/
 nav .logo { background: url("../img/logo.svg") no-repeat; background-size: cover; width: 200px; height: 61px; position: absolute; z-index: 999; top: 20px; left: 50px; }
 
@@ -46,8 +48,6 @@ nav .logo { background: url("../img/logo.svg") no-repeat; background-size: cover
 .newPres .presProduct { width: 50vw; background-image: url("../img/hotProduct.png"); background-repeat: no-repeat; background-size: 20vw; background-position: top 50% left 50%; height: 100%; }
 
 .newPres .presTxt { color: white; width: 50vw; padding-top: 10vh; }
-
-.newPres .presTxt .trait { background-image: linear-gradient(to right, #f8d609, #FF9100 70%); border-radius: 5px; height: 2px; width: 150px; margin-top: -20px; }
 
 .newPres .presTxt li { line-height: 35px; }
 

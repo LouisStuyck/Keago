@@ -97,33 +97,6 @@ function progressBarScroll() {
         slideTwo = document.querySelector(".slide_2"),
         slideThree = document.querySelector(".slide_3");
         
-        if (0 < refPara) {
-            slideOne.style.color = 'white';
-            slideTwo.style.color = 'grey';
-            slideThree.style.color = 'grey';
-            console.log('Ok');
-            if (15 < refPara) {
-                slideOne.style.color = 'grey';
-                slideTwo.style.color = 'white';
-                slideThree.style.color = 'grey';
-                if (30 < refPara) {
-                    slideOne.style.color = 'grey';
-                    slideTwo.style.color = 'grey';
-                    slideThree.style.color = 'white';
-                }
-            }
-        }
-        if (window.innerWidth <= 800){
-            slideOne.style.color = 'white';
-            slideTwo.style.color = 'white';
-            slideThree.style.color = 'white';
-        }
-        if (window.innerHeight <= 600){
-            slideOne.style.color = 'white';
-            slideTwo.style.color = 'white';
-            slideThree.style.color = 'white';
-        }
-        
         console.log(window.innerHeight);
         
     document.getElementById("progressBar").style.height = refPara + "vh";
