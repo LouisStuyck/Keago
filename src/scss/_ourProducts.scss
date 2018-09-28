@@ -3,7 +3,7 @@ main{
 }
 
 .ourProductsColor{
-  color:#F8D609;
+  color: #F8D609;
 }
 
 .productsDisplay{
@@ -155,7 +155,7 @@ main{
   align-items: center;
 }
 
-.productscomparesion_product1{
+.productscomparesion_product{
   width: 46vw;
   height: 46vh;
   background-color: black;
@@ -165,8 +165,8 @@ main{
   align-items: center;
 }
 
-.productscomparesion_product1:hover{
-  .mortise_latch{
+.productscomparesion_product:hover{
+  .latch_rotation{
     transform:rotate(40deg);
     transition-duration: 0.5s;
   }
@@ -236,14 +236,14 @@ main{
   transition-duration: 0.5s;
 }
 
-.productscomparesion_product1:hover{
+.productscomparesion_product:hover{
   .padlock_ring{
     transform:translatey(-2vh);
     transition-duration: 0.5s;
   }
 }
 
-.productscomparesion_product1 .mortise_description{
+.productscomparesion_product .object_description{
   width: 72%;
   height: 80%;
   background-color: black;
@@ -254,11 +254,11 @@ main{
   flex-wrap: wrap;
 }
 
-.productscomparesion_product1 .mortise_description h2{
+.productscomparesion_product .object_description h2{
   margin: 0 auto;
 }
 
-.products1_characteristic{
+.products_characteristic{
   width: 96%;
   height: 70%;
   display: flex;
@@ -343,7 +343,7 @@ main{
     width: 18vw;
   }
 
-  .productscomparesion_product1{
+  .productscomparesion_product{
     width: 47vw;
     height: 50vh;
     margin: 1vh;
@@ -387,7 +387,7 @@ main{
     margin: 0;
   }
 
-  .productscomparesion_product1{
+  .productscomparesion_product{
     width: 80vw;
     margin: 2.5vh 0 1.5vh;
   }
