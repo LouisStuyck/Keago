@@ -334,6 +334,6 @@ span { color: #FC7700; }
   .downButton .aboutUs { width: calc(50vw - 0.5px); }
   .downButton div a { width: 200px; } }
 /** Lien End **/
-@font-face { font-family: "TruenoSBd"; src: url("../../fonts/TruenoSBd.woff") format("woff"), url("../../fonts/TruenoSBd.woff2") format("woff2"), url("../../fonts/TruenoSBd.otf") format("otf"); }
+@font-face { font-family: "TruenoSBd"; src: url("../fonts/TruenoSBd.woff") format("woff"), url("../fonts/TruenoSBd.woff2") format("woff2"), url(" ../fonts/TruenoSBd.otf") format("otf"); }
 
 /*# sourceMappingURL=style.css.map */
