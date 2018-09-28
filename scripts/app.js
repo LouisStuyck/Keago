@@ -66,7 +66,12 @@ window.addEventListener("scroll", function (){
 
 
     if (refPara > (heightWindow - (heightWindow)/diviseur)){
-        parallaxStart.style.backgroundAttachment = 'fixed';
+        if (window.innerHeight >= 600 ) {
+            parallaxStart.style.backgroundAttachment = 'fixed';
+        }
+        else {
+            parallaxStart.style.backgroundAttachment = 'unset';
+        }
     }
     else {
         parallaxStart.style.backgroundAttachment = 'unset';
@@ -76,6 +81,10 @@ window.addEventListener("scroll", function (){
     }
     else {
         parallaxEnd.style.backgroundAttachment = 'fixed';
+    }
+
+    if (window.innerWidth <= 800 ) {
+        parallaxStart.style.backgroundAttachment = 'unset';
     }
 });
 
@@ -104,7 +113,7 @@ function progressBarScroll() {
                 }
             }
         }
-        if (window.innerWidth <= 600){
+        if (window.innerWidth <= 800){
             slideOne.style.color = 'white';
             slideTwo.style.color = 'white';
             slideThree.style.color = 'white';
